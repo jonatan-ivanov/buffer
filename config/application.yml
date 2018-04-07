@@ -1,0 +1,21 @@
+spring.application.name: buffer
+
+spring.jackson.serialization.indent_output: true
+spring.jackson.date-format: com.fasterxml.jackson.databind.util.ISO8601DateFormat
+
+management.endpoints.web.exposure.include: '*'
+
+buffers:
+  bufferList:
+        -
+            name: 'randomNumber'
+            supplierName: 'randomNumberSupplier'
+            desiredSize: 3
+        -
+            name: 'randomGUID'
+            supplierName: 'randomGuidSupplier'
+            desiredSize: 3
+        -
+            # name is optional
+            supplierName: 'randomNumberSupplier'
+            desiredSize: 3

@@ -1,0 +1,108 @@
+{
+	"variables": [],
+	"info": {
+		"name": "buffer",
+		"_postman_id": "783d861e-41d6-5e5c-ed05-0ccf9a6169ca",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/buffers",
+			"request": {
+				"url": "http://localhost:8080/buffers",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/buffers",
+			"request": {
+				"url": "http://localhost:8080/buffers",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"example\",\n    \"supplierName\": \"randomNumberSupplier\",\n    \"desiredSize\": 5\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/buffers",
+			"request": {
+				"url": "http://localhost:8080/buffers",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/buffers/clear",
+			"request": {
+				"url": "http://localhost:8080/buffers/clear",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/buffers/{name}",
+			"request": {
+				"url": "http://localhost:8080/buffers/example",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/buffers/{name}",
+			"request": {
+				"url": "http://localhost:8080/buffers/example",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/buffers/{name}/head",
+			"request": {
+				"url": "http://localhost:8080/buffers/example/head",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/buffers/{name}/clear",
+			"request": {
+				"url": "http://localhost:8080/buffers/example/clear",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

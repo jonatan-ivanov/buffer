@@ -1,0 +1,7 @@
+.idea/
+*.iws
+*.ipr
+*.iml
+
+*.jar
+*.jar.original

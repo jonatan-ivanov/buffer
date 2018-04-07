@@ -1,0 +1,8 @@
+version: '3'
+services:
+    buffer:
+        build: .
+        image: buffer:latest
+        container_name: buffer
+        ports:
+            - "8080:8080"
