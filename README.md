@@ -6,12 +6,12 @@ See [buffer.postman_collection.json](buffer.postman_collection.json)
 
 # How to use
 1. Install [spring-boot cli](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started-installing-spring-boot.html#getting-started-installing-the-cli)
-1. Run: `spring run *.groovy`
-1. Build jar: `spring jar buffer.jar .`
+1. Run: `./builder run` OR `spring run *.groovy`
+1. Build jar: `./builder jar` OR `spring jar buffer.jar .`
 
 # Docker
-- Build: `spring jar buffer.jar . && docker-compose build`
-- Build and run:`spring jar buffer.jar . && docker-compose up`
+- Build: `./builder dockerBuild` OR `spring jar buffer.jar . && docker-compose build`
+- Build and run: `./builder dockerRun` OR `spring jar buffer.jar . && docker-compose up`
 
 # Open in IntelliJ
 1. Open
