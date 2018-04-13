@@ -81,7 +81,7 @@ class Buffer<T> {
             queue.add(supplier.get())
         }
         catch (Exception e) {
-            LOGGER.warn('buffer: $name is not able to fetch item', e)
+            LOGGER.warn("buffer: $name is not able to fetch item", e)
         }
         finally {
             int remainingCount = inProgressCounter.decrementAndGet()
